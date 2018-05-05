@@ -255,6 +255,14 @@ a:hover, a:active {
   font-size: 22px;
   margin: 0;
 }
+@font-face {
+  font-family: 'iconfont';  /* project id 654109 */
+  src: url('//at.alicdn.com/t/font_654109_qbw85ezjm9nklnmi.eot');
+  src: url('//at.alicdn.com/t/font_654109_qbw85ezjm9nklnmi.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_654109_qbw85ezjm9nklnmi.woff') format('woff'),
+  url('//at.alicdn.com/t/font_654109_qbw85ezjm9nklnmi.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_654109_qbw85ezjm9nklnmi.svg#iconfont') format('svg');
+}
 .post .post-title a {
   text-decoration: none;
   letter-spacing: 1px;
