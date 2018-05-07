@@ -1,0 +1,78 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="author" content="kanper tony_kanper@hotmail.com"><title>BootStrap学习 · 康帅傅的blog</title><meta name="description" content="BootStrap简单的入门"><meta name="keywords" content="JAVA 前端 Linux 学习"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="renderer" content="webkit"><link rel="short icon" href="/images/favicon.png" type="image/x-icon"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/private.css"><link rel="stylesheet" href="/css/blog_basic.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="stylesheet" href="/css/iconfont.css"><link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml"></head><body><div class="sidebar animated fadeInDown"><div class="logo-title"><div class="title"><img src="/images/logo@2x.png" style="width:127px;"><h3 title=""><a href="/">康帅傅的blog</a></h3><div class="description"><p>个人技术生活记录</p></div></div></div><ul class="social-links"><li><a href="/atom.xml"><i class="fa fa-rss"></i></a></li><li><a href="http://weibo.com/2766984081"><i class="fa fa-weibo"></i></a></li><li><a href="http://github.com/tydic-kanper"><i class="fa fa-github"></i></a></li><li><a href="http://zhihu.com/people/tony_rui/"><i class="iconfont icon-zhihu"></i></a></li></ul><div class="footer"><a target="_blank" href="/"><span>Theme by </span></a><a href="https://www.caicai.me"> CaiCai </a><span>&</span><a href="https://github.com/Ben02/hexo-theme-Anatole"> Ben</a><span>&</span><a href="https://github.com/tydic-kanper/hexo-theme-Anatole.git"> kanper</a><div class="by_farbox"><a href="https://hexo.io/zh-cn/" target="_blank">Proudly published with Hexo&#65281;</a></div></div></div><div class="main"><div class="page-top animated fadeInDown"><div class="nav"><li><a href="/">首页</a></li><li><a href="/archives">归档</a></li><li><a href="/photo">照片墙</a></li><li><a href="/about">关于</a></li><li><a href="/links">友链</a></li></div><div class="information"><div class="back_btn"><li><a class="fa fa-chevron-left" onclick="window.history.go(-1)"> </a></li></div><div class="avatar"><img src="/images/link.png"></div></div></div><div class="autopagerize_page_element"><div class="content"><div class="post-page"><div class="post animated fadeInDown"><div class="post-title"><h3><a>BootStrap学习</a></h3></div><div class="post-content"><h2 id="1-准备"><a href="#1-准备" class="headerlink" title="1.准备"></a>1.准备</h2><h3 id="CDN启动："><a href="#CDN启动：" class="headerlink" title="CDN启动："></a>CDN启动：</h3><figure class="highlight html"><figcaption><span>CDN</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://cdn.bootcss.com/jquery/2.1.4/jquery.min.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>其余可以采用本地连接方式</p>
+<p><strong>HTML5 doctype</strong></p>
+<p>需要使用HTML5引导，否则将会看到不完整的样式，包括它不会造成太大的问题</p>
+<p><strong>移动优先</strong></p>
+<pre><code>&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+</code></pre><h2 id="2-布局"><a href="#2-布局" class="headerlink" title="2.布局"></a>2.布局</h2><p>除了原有内置的许多栅格系统之外，bootstrap还引入了container容器<br><img src="http://i.imgur.com/DtuD6ws.png" alt=""></p>
+<p>左右断点转变，也就是未填充满，当class引入为.container-fluid则无论何时100%填充，经测试：.container左右留白，自适应，.container-fluid满填充，自适应</p>
+<pre><code>&lt;div class=&quot;container&quot;&gt;
+  &lt;!-- Content here --&gt;
+&lt;/div&gt;
+</code></pre><h2 id="3-内容"><a href="#3-内容" class="headerlink" title="3.内容"></a>3.内容</h2><h3 id="标题和段落"><a href="#标题和段落" class="headerlink" title="标题和段落"></a>标题和段落</h3><p><img src="http://i.imgur.com/zFzzs1L.png" alt=""></p>
+<h3 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h3><p><img src="http://i.imgur.com/HimpQY2.png" alt=""></p>
+<h3 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h3><p><img src="http://i.imgur.com/ExQoKWg.png" alt=""></p>
+<h3 id="表单"><a href="#表单" class="headerlink" title="表单"></a>表单</h3><p><img src="http://i.imgur.com/GmAaEHr.png" alt=""></p>
+<h2 id="4-组件"><a href="#4-组件" class="headerlink" title="4.组件"></a>4.组件</h2><h3 id="按钮"><a href="#按钮" class="headerlink" title="按钮"></a>按钮</h3><p>新的bootstrap在原来的按钮风格上，添加了移出和移入效果，很简单，仅仅需要添加.btn-*-outline；按钮大小仍然通过-lg/-sm调节</p>
+<blockquote>
+<p>对于a标签同样适用，只是在class风格中添加active，对于禁用元素，传统按钮和CSS属性上写disabled，a标签需要置于class中.disabled</p>
+</blockquote>
+<p><img src="http://i.imgur.com/hKeVL1C.png" alt=""></p>
+<p><img src="http://i.imgur.com/A5wEDnI.png" alt=""></p>
+<p>autocomplete：其含义代表是否让浏览器自动记录之前输入的值，默认为on，设置为off后，会取消默认输入的值</p>
+<p>其他按钮组和老版本bootstrap一致，单选框/复选框组/按钮组/按钮下拉框等，没有改变</p>
+<h3 id="表单-1"><a href="#表单-1" class="headerlink" title="表单"></a>表单</h3><p><img src="http://i.imgur.com/iEVWDOG.png" alt=""></p>
+<p>一行显示label和input与原来一致，要采用栅格系统，可以用如下代码</p>
+<pre><code>&lt;div class=&quot;form-group row&quot;&gt;
+    &lt;label for=&quot;inputEmail3&quot; class=&quot;col-sm-2 form-control-label&quot;&gt;Email&lt;/label&gt;
+    &lt;div class=&quot;col-sm-10&quot;&gt;
+      &lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;inputEmail3&quot; placeholder=&quot;Email&quot;&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+</code></pre><p><img src="http://i.imgur.com/8KPGD7t.png" alt=""></p>
+<p>表单的其余的，诸如大小/可用性/帮助文字和之前版本一致</p>
+<pre><code>&lt;small class=&quot;text-muted&quot;&gt;
+  Some inline text with a small tag looks like this.
+&lt;/small&gt;
+</code></pre><h4 id="表单验证"><a href="#表单验证" class="headerlink" title="表单验证"></a>表单验证</h4><pre><code>&lt;div class=&quot;form-group has-success&quot;&gt;
+  &lt;label class=&quot;control-label&quot; for=&quot;inputSuccess1&quot;&gt;Input with success&lt;/label&gt;
+  &lt;input type=&quot;text&quot; class=&quot;form-control form-control-success&quot; id=&quot;inputSuccess1&quot;&gt;
+&lt;/div&gt;
+</code></pre><p><img src="http://i.imgur.com/mbVxJ0o.png" alt=""></p>
+<h3 id="卡片"><a href="#卡片" class="headerlink" title="卡片"></a>卡片</h3><pre><code>&lt;div class=&quot;card&quot;&gt;
+  &lt;img class=&quot;card-img-top&quot; data-src=&quot;holder.js/100%x180/&quot; alt=&quot;Card image cap&quot;&gt;
+  &lt;div class=&quot;card-block&quot;&gt;
+    &lt;h4 class=&quot;card-title&quot;&gt;Card title&lt;/h4&gt;
+    &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card&apos;s content.&lt;/p&gt;
+    &lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;Button&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre><p><img src="http://i.imgur.com/ToXQdpk.png" alt=""></p>
+<h3 id="导航栏-导航条"><a href="#导航栏-导航条" class="headerlink" title="导航栏/导航条"></a>导航栏/导航条</h3><h3 id="页码条"><a href="#页码条" class="headerlink" title="页码条"></a>页码条</h3><h3 id="进度条"><a href="#进度条" class="headerlink" title="进度条"></a>进度条</h3><h3 id="列表组"><a href="#列表组" class="headerlink" title="列表组"></a>列表组</h3><h3 id="模态框"><a href="#模态框" class="headerlink" title="模态框"></a>模态框</h3><h3 id="锚连接按钮"><a href="#锚连接按钮" class="headerlink" title="锚连接按钮"></a>锚连接按钮</h3><h3 id="按钮提示"><a href="#按钮提示" class="headerlink" title="按钮提示"></a>按钮提示</h3><h3 id="对话框提示"><a href="#对话框提示" class="headerlink" title="对话框提示"></a>对话框提示</h3><h3 id="轮播"><a href="#轮播" class="headerlink" title="轮播"></a>轮播</h3><pre><code>&lt;div id=&quot;carousel-example-generic&quot; class=&quot;carousel slide&quot; data-ride=&quot;carousel&quot;&gt;
+  &lt;ol class=&quot;carousel-indicators&quot;&gt;
+    &lt;li data-target=&quot;#carousel-example-generic&quot; data-slide-to=&quot;0&quot; class=&quot;active&quot;&gt;&lt;/li&gt;
+    &lt;li data-target=&quot;#carousel-example-generic&quot; data-slide-to=&quot;1&quot;&gt;&lt;/li&gt;
+    &lt;li data-target=&quot;#carousel-example-generic&quot; data-slide-to=&quot;2&quot;&gt;&lt;/li&gt;
+  &lt;/ol&gt;
+  &lt;div class=&quot;carousel-inner&quot; role=&quot;listbox&quot;&gt;
+    &lt;div class=&quot;carousel-item active&quot;&gt;
+      &lt;img data-src=&quot;holder.js/900x500/auto/#777:#555/text:First slide&quot; alt=&quot;First slide&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;carousel-item&quot;&gt;
+      &lt;img data-src=&quot;holder.js/900x500/auto/#666:#444/text:Second slide&quot; alt=&quot;Second slide&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;carousel-item&quot;&gt;
+      &lt;img data-src=&quot;holder.js/900x500/auto/#555:#333/text:Third slide&quot; alt=&quot;Third slide&quot;&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;a class=&quot;left carousel-control&quot; href=&quot;#carousel-example-generic&quot; role=&quot;button&quot; data-slide=&quot;prev&quot;&gt;
+    &lt;span class=&quot;icon-prev&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+    &lt;span class=&quot;sr-only&quot;&gt;Previous&lt;/span&gt;
+  &lt;/a&gt;
+  &lt;a class=&quot;right carousel-control&quot; href=&quot;#carousel-example-generic&quot; role=&quot;button&quot; data-slide=&quot;next&quot;&gt;
+    &lt;span class=&quot;icon-next&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+    &lt;span class=&quot;sr-only&quot;&gt;Next&lt;/span&gt;
+  &lt;/a&gt;
+&lt;/div&gt;
+</code></pre><p><img src="http://i.imgur.com/n0WfJE9.png" alt=""></p>
+</div><div class="post-footer"><div class="meta"><div class="info"><i class="fa fa-sun-o"></i><span class="date">2018-05-07</span><i class="fa fa-tag"></i><a class="tag" href="/categories/前端/" title="前端">前端 </a><a class="tag" href="/categories/前端/CSS/" title="CSS">CSS </a><a class="tag" href="/tags/bootstrap/" title="bootstrap">bootstrap </a></div></div></div></div><div class="share"><div class="evernote"><a class="fa fa-bookmark" href="javascript:(function(){EN_CLIP_HOST='http://www.evernote.com';try{var%20x=document.createElement('SCRIPT');x.type='text/javascript';x.src=EN_CLIP_HOST+'/public/bookmarkClipper.js?'+(new%20Date().getTime()/100000);document.getElementsByTagName('head')[0].appendChild(x);}catch(e){location.href=EN_CLIP_HOST+'/clip.action?url='+encodeURIComponent(location.href)+'&amp;title='+encodeURIComponent(document.title);}})();" ref="nofollow" target="_blank"></a></div><div class="weibo"><a class="fa fa-weibo" href="javascript:void((function(s,d,e){try{}catch(e){}var f='http://service.weibo.com/share/share.php?',u=d.location.href,p=['url=',e(u),'&amp;title=',e(d.title),'&amp;appkey=2924220432'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));"></a></div><div class="twitter"><a class="fa fa-twitter" href="http://twitter.com/home?status=,https://kanper.top/2018/05/07/Bootstrap学习/,康帅傅的blog,BootStrap学习,;"></a></div></div><div class="pagination"><ul class="clearfix"><li class="next pagbuttons"><a class="btn" role="navigation" href="/2018/05/07/Vietnam/" title="越南旅行">下一篇</a></li></ul></div><ul class="money"><li><p class="wechat">欢迎微信打赏支持建站</p><img src="/images/wechat.jpg" alt="wechat"></li><li><p class="alipay">欢迎支付宝打赏支持建站</p><img src="/images/alipay.jpg" alt="alipay"></li></ul></div></div></div></div><script src="/js/jquery.js"></script><script src="/js/jquery-migrate-1.2.1.min.js"></script><script src="/js/jquery.appear.js"></script></body></html>

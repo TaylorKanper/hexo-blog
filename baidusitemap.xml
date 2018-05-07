@@ -3,22 +3,53 @@
 
 
     
-    
-    
   <url>
     <loc>https://kanper.top/2018/05/07/Vietnam/</loc>
-    <lastmod>2018-05-07T01:21:17.672Z</lastmod>
+    <lastmod>2018-05-07T06:26:59.564Z</lastmod>
     <data>
         <display>
-        <title>Vietnam</title>
+        <title>越南旅行</title>
         <pubTime>2018-05-07T01:21:17.000Z</pubTime>
         
+        <tag>越南</tag>
+         
+        <tag>旅行</tag>
+         
          
            
+             
+              <breadCrumb title="旅行" url="https://kanper.top/categories/%E6%97%85%E8%A1%8C/"/>
+          
         </display>
     </data>
     </url>
 
+    
+  <url>
+    <loc>https://kanper.top/2018/05/07/Bootstrap%E5%AD%A6%E4%B9%A0/</loc>
+    <lastmod>2018-05-07T03:27:54.294Z</lastmod>
+    <data>
+        <display>
+        <title>BootStrap学习</title>
+        <pubTime>2018-05-07T03:21:49.000Z</pubTime>
+        
+        <tag>bootstrap</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端" url="https://kanper.top/categories/%E5%89%8D%E7%AB%AF/"/>
+          
+             
+              <breadCrumb title="CSS" url="https://kanper.top/categories/%E5%89%8D%E7%AB%AF/CSS/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+    
     
     
     

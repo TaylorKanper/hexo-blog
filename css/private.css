@@ -1,0 +1,14 @@
+.money{
+    position: relative;
+    list-style: none;
+}
+.money li{
+    width: 30%;
+    float: left;
+}
+p.alipay{
+    color: lightblue;
+}
+p.wechat{
+    color: green
+}
