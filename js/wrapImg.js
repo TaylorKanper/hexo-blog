@@ -2,7 +2,7 @@ $(function(){
     wrapImageWithFancyBox();
 });
 function wrapImageWithFancyBox() {
-    $('img').not('.sidebar-image img').not('#author-avatar img').not(".mdl-menu img").each(function() {
+    $('img').not('.sidebar-image img').not('.avatar img').not(".title img").each(function() {
 
         var $image = $(this);
         var imageCaption = $image.attr('alt');
@@ -26,9 +26,9 @@ function wrapImageWithFancyBox() {
 
     $().fancybox({
         selector : '[data-fancybox="images"]',
-        thumbs : true,
+        thumbs : false,
         hash : false,
-        loop : false,
+        loop : false
     });
 
 }
