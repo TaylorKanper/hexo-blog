@@ -4,6 +4,33 @@
 
     
   <url>
+    <loc>https://kanper.top/2018/05/11/%E8%B0%B7%E6%AD%8C%E7%BF%BB%E8%AF%91/</loc>
+    <lastmod>2018-05-11T06:34:40.422Z</lastmod>
+    <data>
+        <display>
+        <title>通过JAVA调用谷歌翻译API</title>
+        <pubTime>2018-05-11T05:59:27.000Z</pubTime>
+        
+        <tag>JAVA</tag>
+         
+        <tag>语言翻译</tag>
+         
+        <tag>谷歌</tag>
+         
+         
+           
+             
+              <breadCrumb title="JAVA" url="https://kanper.top/categories/JAVA/"/>
+          
+             
+              <breadCrumb title="翻译" url="https://kanper.top/categories/JAVA/%E7%BF%BB%E8%AF%91/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://kanper.top/2018/05/10/spark%E5%A4%84%E7%90%86xml/</loc>
     <lastmod>2018-05-10T07:06:24.507Z</lastmod>
     <data>
@@ -73,7 +100,6 @@
     </data>
     </url>
 
-    
     
   <url>
     <loc>https://kanper.top/2018/05/07/Bootstrap%E5%AD%A6%E4%B9%A0/</loc>

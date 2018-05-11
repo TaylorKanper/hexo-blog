@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://kanper.top/"/>
-  <updated>2018-05-10T07:06:24.507Z</updated>
+  <updated>2018-05-11T06:34:40.422Z</updated>
   <id>https://kanper.top/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>通过JAVA调用谷歌翻译API</title>
+    <link href="https://kanper.top/2018/05/11/%E8%B0%B7%E6%AD%8C%E7%BF%BB%E8%AF%91/"/>
+    <id>https://kanper.top/2018/05/11/谷歌翻译/</id>
+    <published>2018-05-11T05:59:27.000Z</published>
+    <updated>2018-05-11T06:34:40.422Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>被谷歌ai语音刷屏，昨天看了视频没有&quot;感动.惊喜&quot;，比较淡定，毕竟这是google理所当然能办到的事情，G厂在ai领域早已是领头羊，环境，土壤，公司信奉的价值观缺一不可。最重要的是，那帮&quot;天才&quot;能在理想的环境中做着理想的事情，羡慕古狗</p><footer><strong>kanper</strong></footer></blockquote><h2>闲聊</h2><p>如引文所说的那样，很羡慕谷歌 🐶 的工程师,目前一直在学习安卓，学习安卓不可避免的跟谷歌打交道，服务器快到期了，谷歌也给我发了新的功能邮件，于是就上去看了一下，心想反正以后也会用那些免费的API，索性试试先</p><h2>准备</h2><p>✅ 你可以选择性的安装谷歌SDK开发，不过这个安装之后，可以在本地很方便的利用命令行操作谷歌一些资源<br>🇨🇳 谷歌API对于中文也是十分友好的，自己去看也不错</p><ol><li>首先将谷歌工程中的服务账号的私钥保存到客户机上</li><li>设置GOOGLE_APPLICATION_CREDENTIALS的环境变量指向这个私钥地址</li><li>然后开启一个java工程</li></ol><h2>代码</h2><figure class="highlight java"><figcaption><span>TranslationDemo</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Instantiates a client</span></span><br><span class="line">Translate translate = TranslateOptions.getDefaultInstance().getService();</span><br><span class="line"></span><br><span class="line"><span class="comment">// The text to translate</span></span><br><span class="line">String text = <span class="string">"Hello, world! My name is Zelda, you know alipay is popular all around the world,is't it?"</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Translates some text into chinese and japanese</span></span><br><span class="line">Translation translation =</span><br><span class="line">        translate.translate(</span><br><span class="line">                text,</span><br><span class="line">                Translate.TranslateOption.sourceLanguage(<span class="string">"en"</span>),</span><br><span class="line">                Translate.TranslateOption.targetLanguage(<span class="string">"zh-cn"</span>));</span><br><span class="line">Translation translationJapanese =</span><br><span class="line">        translate.translate(</span><br><span class="line">                text,</span><br><span class="line">                Translate.TranslateOption.sourceLanguage(<span class="string">"en"</span>),</span><br><span class="line">                Translate.TranslateOption.targetLanguage(<span class="string">"ja"</span>));</span><br><span class="line"></span><br><span class="line">System.out.printf(<span class="string">"OriginText: %s%n"</span>, text);</span><br><span class="line">System.out.printf(<span class="string">"Translation Chinese: %s%n"</span>, translation.getTranslatedText());</span><br><span class="line">System.out.printf(<span class="string">"Translation Japanese: %s%n"</span>, translationJapanese.getTranslatedText());</span><br></pre></td></tr></table></figure><h2>结果</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">OriginText: Hello, world! My name is Zelda, you know alipay is popular all around the world,is&apos;t it?</span><br><span class="line">Translation Chinese: 你好，世界！我的名字是塞尔达，你知道支付宝在世界各地都很受欢迎，不是吗？</span><br><span class="line">Translation Japanese: こんにちは世界！私の名前はゼルダです、あなたはアリペイが世界中で人気があることを知っていますか？</span><br><span class="line"></span><br></pre></td></tr></table></figure><h2>后记</h2><p>可以看出，引用谷歌API是十分方便的，很低的时延就可以返回结果，缺点是需要翻墙，在java代码中，还是需要配置代理，或者你可以采用以下代码进行代理</p><figure class="highlight java"><figcaption><span>代理代码</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">static</span> &#123;</span><br><span class="line">    System.setProperty(<span class="string">"http.proxyHost"</span>, <span class="string">"127.0.0.1"</span>);</span><br><span class="line">    System.setProperty(<span class="string">"http.proxyPort"</span>, <span class="string">"1080"</span>);</span><br><span class="line">    System.setProperty(<span class="string">"https.proxyHost"</span>, <span class="string">"127.0.0.1"</span>);</span><br><span class="line">    System.setProperty(<span class="string">"https.proxyPort"</span>, <span class="string">"1080"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>总的来说，这些知识为了将来方便的调用第三方接口作出准备</p><h2>参考文档</h2><ul><li><a href="https://cloud.google.com/translate/docs/translating-text#translate-translate-text-java" title="谷歌翻译" target="_blank" rel="noopener">谷歌翻译Translating Text</a></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;&lt;p&gt;被谷歌ai语音刷屏，昨天看了视频没有&amp;quot;感动.惊喜&amp;quot;，比较淡定，毕竟这是google理所当然能办到的事情，G厂在ai领域早已是领头羊，环境，土壤，公司信奉的价值观缺一不可。最重要的是，那帮&amp;quot;天才&amp;quot;能在理想的环境中
+      
+    
+    </summary>
+    
+      <category term="JAVA" scheme="https://kanper.top/categories/JAVA/"/>
+    
+      <category term="翻译" scheme="https://kanper.top/categories/JAVA/%E7%BF%BB%E8%AF%91/"/>
+    
+    
+      <category term="JAVA" scheme="https://kanper.top/tags/JAVA/"/>
+    
+      <category term="语言翻译" scheme="https://kanper.top/tags/%E8%AF%AD%E8%A8%80%E7%BF%BB%E8%AF%91/"/>
+    
+      <category term="谷歌" scheme="https://kanper.top/tags/%E8%B0%B7%E6%AD%8C/"/>
+    
+  </entry>
   
   <entry>
     <title>spark处理xml</title>
