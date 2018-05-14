@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://kanper.top/"/>
-  <updated>2018-05-11T06:36:11.416Z</updated>
+  <updated>2018-05-14T08:52:58.739Z</updated>
   <id>https://kanper.top/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>学习安卓开发&lt;1&gt;</title>
+    <link href="https://kanper.top/2018/05/14/%E5%AD%A6%E4%B9%A0%E5%AE%89%E5%8D%93%E5%BC%80%E5%8F%91-1/"/>
+    <id>https://kanper.top/2018/05/14/学习安卓开发-1/</id>
+    <published>2018-05-14T08:23:36.000Z</published>
+    <updated>2018-05-14T08:52:58.739Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>从一个有一定的Java开发去学习android开发比无基础的开发者稍微快一些，在学习android的过程中，可以将Java的知识进行巩固和复习，如果说要进行专业的android开发，则还需要很长一段时间，博主干了4年的Java，大致看了一下安卓的开发，感觉需要1年才能上手</p><footer><strong>kanper</strong></footer></blockquote><h2>安卓 VS android</h2><p>首先，吐槽一下关于安卓和android的区别，很多人也许认为安卓就是android的中文翻译，但是今天我想告诉你，其实不是，安卓现在狭义的讲，已经仅仅指的国内的定制化的安卓系统了，有代表为华为、小米的miui，他们讲安卓定制为符合国人需要，并且有一些恶心的全家桶和广告，让用户不甚其烦，不过还好，很多厂家还是慢慢的有良心，没良心的那些上不了Google play的应用，频繁的在后台唤醒程序，或者干脆吃尽手机资源。</p><p>之前看了知乎上关于安卓续航的文章</p><blockquote><p>当人们在讨论安卓手机掉帧、卡顿、续航变短的时候，常常会接着讨论手机性能不足、电池太小等等硬件相关问题，对手机稍有了解的可能还会说安卓系统的优化不足……但你有没有想过，这一切的根源，极有可能是你每天都要使用的APP。</p><footer><strong>@村姑阳子</strong><cite><a href="https://zhuanlan.zhihu.com/p/26263557" target="_blank" rel="noopener">安卓 & 卡顿 & APP</a></cite></footer></blockquote><p>诚然手机的性能是可以提升用户体验的，那么我们开发者能做些什么呢，少吃一点内存，多用一点缓存？我想这是值得我们开发者深思的问题，安卓并不差，差的是国内浮躁的开发环境，很多时候，应用甚至不考虑用户的感受，强行向用户进行填鸭式广告推销及全家桶推荐，博主是谷粉，喜欢 🌎 谷歌开源纯净的系统，就算开发，也要花钱去专门买一个nexus 5X来进行开发，无他，用着爽，全家桶舒服，墙外的世界不过是一个VPN、shadowsocks就能达到的，google play的世界增加了对app的审核，把用户放在了心上。</p><h2>准备</h2><p>🔔 安卓开发首先需要在机器上安装android studio,这个里面集成了相当多安卓开发的sdk,也对idea用户非常友善<br>🔔 按照Google 官方文档，从第一个activity开始敲起，仔细理解里面的布局，事件等是如何交互的<a href="https://developer.android.com/training/basics/firstapp/" title="构建您的第一个应用" target="_blank" rel="noopener">谷歌开发文档</a></p><h2>收获</h2><p>移动APP的反馈是非常快的，IDE的继承也是相当的方便，得到积极的回馈会非常乐于继续开发的，Let’s Go!</p><h2>参考文档</h2><ul><li><a href="https://developer.android.com/training/basics/firstapp/" title="构建您的第一个应用" target="_blank" rel="noopener">谷歌开发者</a></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;&lt;p&gt;从一个有一定的Java开发去学习android开发比无基础的开发者稍微快一些，在学习android的过程中，可以将Java的知识进行巩固和复习，如果说要进行专业的android开发，则还需要很长一段时间，博主干了4年的Java，大致看了一下安卓的开发
+      
+    
+    </summary>
+    
+      <category term="JAVA" scheme="https://kanper.top/categories/JAVA/"/>
+    
+      <category term="android" scheme="https://kanper.top/categories/JAVA/android/"/>
+    
+    
+      <category term="JAVA" scheme="https://kanper.top/tags/JAVA/"/>
+    
+      <category term="移动端" scheme="https://kanper.top/tags/%E7%A7%BB%E5%8A%A8%E7%AB%AF/"/>
+    
+      <category term="谷歌" scheme="https://kanper.top/tags/%E8%B0%B7%E6%AD%8C/"/>
+    
+  </entry>
   
   <entry>
     <title>通过JAVA调用谷歌翻译API</title>
@@ -41,9 +72,9 @@
     
       <category term="JAVA" scheme="https://kanper.top/tags/JAVA/"/>
     
-      <category term="语言翻译" scheme="https://kanper.top/tags/%E8%AF%AD%E8%A8%80%E7%BF%BB%E8%AF%91/"/>
-    
       <category term="谷歌" scheme="https://kanper.top/tags/%E8%B0%B7%E6%AD%8C/"/>
+    
+      <category term="语言翻译" scheme="https://kanper.top/tags/%E8%AF%AD%E8%A8%80%E7%BF%BB%E8%AF%91/"/>
     
   </entry>
   
